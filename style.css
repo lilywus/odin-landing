@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 32px 10%;
-    background-color: #1F2937;
+    background-color: #1f3729;
 }
 
 .header {
@@ -26,9 +26,14 @@ body {
     color: #F9FAF8;
 }
 
+.icon-img {
+    width: 50px;
+    height: 50px;
+}
+
 .links {
     display: flex;
-    gap: 16px;
+    gap: 32px;
 }
 
 .header a {
@@ -54,6 +59,15 @@ body {
     flex: 1 1 0;
 }
 
+.hero-text a {
+    text-decoration: none;
+    color:#ecbb0b
+}
+
+.hero-text a:hover {
+    text-decoration: underline;
+}
+
 .hero-text h1 {
     margin: 0;
     font-size: 48px;
@@ -67,27 +81,22 @@ body {
     padding: 8px 32px;
     font-weight: 600;
     font-size: 18px;
-    background-color: #3882F6;
-    color: #E5E7EB;
+    background-color: #ecbb0b;
+    color: #000000;
 }
 
 .hero-text button:hover {
-    background-color: #235097;
+    background-color: #c19a0d;
     cursor: pointer;
 }
 
 .hero-text button:active {
-    background-color: #172f56;
+    background-color: #a88506;
+    color: #fff;
 }
 
-.hero-img {
-    display: flex;
-    height: 100%;
-    flex: 1 1 0;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    background-color: #82848a;
+.hero-img img {
+    max-width: 400px;
 }
 
 .info {
@@ -95,13 +104,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #686a71;
+    color: #00280d;
 }
 
 .info h2 {
     font-weight: 800;
     font-size: 36px;
-    color: #1F2937;
+    color: #1f3729;
 }
 
 .info-items {
@@ -110,23 +119,32 @@ body {
     gap: 64px;
 }
 
+.info-items a {
+    text-decoration: none;
+    color: #856a08;
+}
+
+.info-items a:hover {
+    text-decoration: underline;
+}
+
 .item {
     text-align: center;
 }
 
 .square {
-    width: 100%;
+    width: 200px;
     aspect-ratio: 1 / 1;
     border-radius: 10%;
-    border: 5px solid #3882F6;
+    border: 5px solid #ecbb0b;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding: 108px 19%;
-    color: #1F2937;
+    padding: 64px 20%;
+    color: #1f3729;
     justify-content: center;
 }
 
@@ -158,27 +176,29 @@ body {
     width: 100%;
     border-radius: 8px;
     padding: 32px 64px;
-    color: #fff;
-    background-color: #3882F6;
+    color: #00280d;
+    background-color: #ecbb0b;
 }
 
 .call button {
-    border: 3px solid #fff;
+    border: 3px solid #00280d;
     height: 100%;
     border-radius: 8px;
     padding: 8px 32px;
     font-weight: 600;
     font-size: 18px;
-    background-color: #3882F6;
-    color: #fff;
+    background-color: #ecbb0b;
+    color: #00280d;
 }
 
 .call button:hover {
-    background-color: #235097;
+    background-color: #a88506;
 }
 
 .call button:active {
-    background-color: #172f56;
+    background-color: #00280d;
+    border: 3px solid #ecbb0b;
+    color: #ecbb0b;
 }
 
 .footer {
@@ -186,6 +206,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 32px;
-    background-color: #1F2937;
+    background-color: #1f3729;
     color: #fff;
 }
